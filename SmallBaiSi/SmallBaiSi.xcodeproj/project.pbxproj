@@ -8,19 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983291E2C7BC70027F06A /* AppDelegate.swift */; };
-		A179832C1E2C7BC70027F06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179832B1E2C7BC70027F06A /* ViewController.swift */; };
 		A179832F1E2C7BC70027F06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179832D1E2C7BC70027F06A /* Main.storyboard */; };
 		A17983311E2C7BC70027F06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17983301E2C7BC70027F06A /* Assets.xcassets */; };
-		A17983341E2C7BC70027F06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17983321E2C7BC70027F06A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A17983261E2C7BC70027F06A /* SmallBaiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallBaiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17983291E2C7BC70027F06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A179832B1E2C7BC70027F06A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A179832E1E2C7BC70027F06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A17983301E2C7BC70027F06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A17983331E2C7BC70027F06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A17983351E2C7BC70027F06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,10 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				A17983291E2C7BC70027F06A /* AppDelegate.swift */,
-				A179832B1E2C7BC70027F06A /* ViewController.swift */,
 				A179832D1E2C7BC70027F06A /* Main.storyboard */,
 				A17983301E2C7BC70027F06A /* Assets.xcassets */,
-				A17983321E2C7BC70027F06A /* LaunchScreen.storyboard */,
 				A17983351E2C7BC70027F06A /* Info.plist */,
 			);
 			path = SmallBaiSi;
@@ -124,7 +118,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17983341E2C7BC70027F06A /* LaunchScreen.storyboard in Resources */,
 				A17983311E2C7BC70027F06A /* Assets.xcassets in Resources */,
 				A179832F1E2C7BC70027F06A /* Main.storyboard in Resources */,
 			);
@@ -137,7 +130,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A179832C1E2C7BC70027F06A /* ViewController.swift in Sources */,
 				A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +143,6 @@
 				A179832E1E2C7BC70027F06A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A17983321E2C7BC70027F06A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A17983331E2C7BC70027F06A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,8 +243,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2TWSPHNK64;
 				INFOPLIST_FILE = SmallBaiSi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghzzpg.ios.SmallBaiSi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,8 +258,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2TWSPHNK64;
 				INFOPLIST_FILE = SmallBaiSi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghzzpg.ios.SmallBaiSi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
