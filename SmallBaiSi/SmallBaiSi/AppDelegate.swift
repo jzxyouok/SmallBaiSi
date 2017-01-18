@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // 创建窗口, 设置窗口的根控制器, 显示窗口
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let tabBarVc : HGMainController = HGMainController()
+        self.window?.rootViewController = tabBarVc
+        self.window?.makeKeyAndVisible()
         
         return true
     }

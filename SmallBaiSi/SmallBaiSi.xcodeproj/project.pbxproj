@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14A0B771E2F14B100242956 /* HGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A0B761E2F14B100242956 /* HGTabBarView.swift */; };
 		A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983291E2C7BC70027F06A /* AppDelegate.swift */; };
 		A179832F1E2C7BC70027F06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179832D1E2C7BC70027F06A /* Main.storyboard */; };
 		A17983311E2C7BC70027F06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17983301E2C7BC70027F06A /* Assets.xcassets */; };
+		A17983471E2CFC250027F06A /* HGMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983461E2CFC250027F06A /* HGMainController.swift */; };
+		A17983581E2CFEED0027F06A /* HGEssenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983571E2CFEED0027F06A /* HGEssenceController.swift */; };
+		A179835A1E2CFF040027F06A /* HGFollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983591E2CFF040027F06A /* HGFollowController.swift */; };
+		A179835C1E2CFF190027F06A /* HGNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179835B1E2CFF190027F06A /* HGNewController.swift */; };
+		A179835E1E2CFF310027F06A /* HGProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179835D1E2CFF310027F06A /* HGProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A14A0B761E2F14B100242956 /* HGTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGTabBarView.swift; sourceTree = "<group>"; };
 		A17983261E2C7BC70027F06A /* SmallBaiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallBaiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17983291E2C7BC70027F06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A179832E1E2C7BC70027F06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A17983301E2C7BC70027F06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A17983351E2C7BC70027F06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17983461E2CFC250027F06A /* HGMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGMainController.swift; sourceTree = "<group>"; };
+		A17983571E2CFEED0027F06A /* HGEssenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGEssenceController.swift; sourceTree = "<group>"; };
+		A17983591E2CFF040027F06A /* HGFollowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGFollowController.swift; sourceTree = "<group>"; };
+		A179835B1E2CFF190027F06A /* HGNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGNewController.swift; sourceTree = "<group>"; };
+		A179835D1E2CFF310027F06A /* HGProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +62,226 @@
 		A17983281E2C7BC70027F06A /* SmallBaiSi */ = {
 			isa = PBXGroup;
 			children = (
+				A179833B1E2C91A90027F06A /* Classes */,
 				A17983291E2C7BC70027F06A /* AppDelegate.swift */,
 				A179832D1E2C7BC70027F06A /* Main.storyboard */,
 				A17983301E2C7BC70027F06A /* Assets.xcassets */,
 				A17983351E2C7BC70027F06A /* Info.plist */,
 			);
 			path = SmallBaiSi;
+			sourceTree = "<group>";
+		};
+		A179833B1E2C91A90027F06A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A17983411E2CE1A40027F06A /* Main */,
+				A179833C1E2C91A90027F06A /* Essence */,
+				A179833E1E2C91A90027F06A /* New */,
+				A17983401E2C91A90027F06A /* Publish */,
+				A179833D1E2C91A90027F06A /* Follow */,
+				A179833F1E2C91A90027F06A /* Profile */,
+				A17983421E2CE1AF0027F06A /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A179833C1E2C91A90027F06A /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				A17983481E2CFE2F0027F06A /* Controller */,
+				A17983491E2CFE2F0027F06A /* Model */,
+				A179834A1E2CFE2F0027F06A /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		A179833D1E2C91A90027F06A /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				A179834B1E2CFE3D0027F06A /* Controller */,
+				A179834C1E2CFE3D0027F06A /* Model */,
+				A179834D1E2CFE3D0027F06A /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		A179833E1E2C91A90027F06A /* New */ = {
+			isa = PBXGroup;
+			children = (
+				A179834E1E2CFE4A0027F06A /* Controller */,
+				A179834F1E2CFE4A0027F06A /* Model */,
+				A17983501E2CFE4A0027F06A /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		A179833F1E2C91A90027F06A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A17983511E2CFE550027F06A /* Controller */,
+				A17983521E2CFE550027F06A /* Model */,
+				A17983531E2CFE550027F06A /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A17983401E2C91A90027F06A /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				A17983541E2CFE600027F06A /* Controller */,
+				A17983551E2CFE600027F06A /* Model */,
+				A17983561E2CFE600027F06A /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		A17983411E2CE1A40027F06A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A17983441E2CFBF80027F06A /* Model */,
+				A17983451E2CFBF80027F06A /* View */,
+				A17983431E2CFBF80027F06A /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A17983421E2CE1AF0027F06A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A17983431E2CFBF80027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17983461E2CFC250027F06A /* HGMainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A17983441E2CFBF80027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A17983451E2CFBF80027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A14A0B761E2F14B100242956 /* HGTabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A17983481E2CFE2F0027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17983571E2CFEED0027F06A /* HGEssenceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A17983491E2CFE2F0027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A179834A1E2CFE2F0027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A179834B1E2CFE3D0027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17983591E2CFF040027F06A /* HGFollowController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A179834C1E2CFE3D0027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A179834D1E2CFE3D0027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A179834E1E2CFE4A0027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A179835B1E2CFF190027F06A /* HGNewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A179834F1E2CFE4A0027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A17983501E2CFE4A0027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A17983511E2CFE550027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A179835D1E2CFF310027F06A /* HGProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A17983521E2CFE550027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A17983531E2CFE550027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A17983541E2CFE600027F06A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A17983551E2CFE600027F06A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A17983561E2CFE600027F06A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +356,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14A0B771E2F14B100242956 /* HGTabBarView.swift in Sources */,
+				A17983581E2CFEED0027F06A /* HGEssenceController.swift in Sources */,
+				A179835A1E2CFF040027F06A /* HGFollowController.swift in Sources */,
 				A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */,
+				A17983471E2CFC250027F06A /* HGMainController.swift in Sources */,
+				A179835E1E2CFF310027F06A /* HGProfileController.swift in Sources */,
+				A179835C1E2CFF190027F06A /* HGNewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +520,7 @@
 				A179833A1E2C7BC70027F06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
