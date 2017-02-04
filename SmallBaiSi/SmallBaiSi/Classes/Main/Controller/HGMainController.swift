@@ -10,36 +10,20 @@ import UIKit
 
 class HGMainController: UITabBarController {
     
-    // MARK:- 懒加载属性
-    // 定义数组存放tabBarItem
-    fileprivate lazy var itemArray : NSMutableArray = {
-        let itemArray = NSMutableArray()
-        return itemArray
-    }()
-    // 把HGTabBarView懒加载进来
-    fileprivate lazy var tabBarView : HGTabBarView = {
-        
-        let tabBarViewFrame = self.tabBar.frame
-        let tabBarView = HGTabBarView(frame: tabBarViewFrame, itemArray: self.itemArray)
-        return tabBarView
-    }()
-    
     // MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.blue
+//        self.view.backgroundColor = UIColor.blue
         
         // 添加所有的子控制器
-        self.addAllChildViewController()
+        addAllChildViewController()
         
         // 设置tabBar上按钮的内容
-        self.setTabBarContent()
+        setTabBarContent()
         
-        // 移除系统tabBar
-        self.tabBar.removeFromSuperview()
-        // 添加View作为tabBar
-        self.view.addSubview(tabBarView)
+        // 自定义发布按钮
+        publishBtn()
     }
 
 }
@@ -52,12 +36,12 @@ extension HGMainController {
         // 精华
         let essenceVC : HGEssenceController = HGEssenceController()
         essenceVC.view.backgroundColor = UIColor.red
-        let essenceNav : UINavigationController = UINavigationController(rootViewController: essenceVC)
+        let essenceNav : HGNavigationController = HGNavigationController(rootViewController: essenceVC)
         self.addChildViewController(essenceNav)
         // 最新
         let newVC : HGEssenceController = HGEssenceController()
         newVC.view.backgroundColor = UIColor.yellow
-        let newNav : UINavigationController = UINavigationController(rootViewController: newVC)
+        let newNav : HGNavigationController = HGNavigationController(rootViewController: newVC)
         self.addChildViewController(newNav)
         // 发布
         let publishVC : HGEssenceController = HGEssenceController()
@@ -65,12 +49,12 @@ extension HGMainController {
         // 关注
         let followVC : HGEssenceController = HGEssenceController()
         followVC.view.backgroundColor = UIColor.darkGray
-        let followNav : UINavigationController = UINavigationController(rootViewController: followVC)
+        let followNav : HGNavigationController = HGNavigationController(rootViewController: followVC)
         self.addChildViewController(followNav)
         // 我
         let meVC : HGEssenceController = HGEssenceController()
         meVC.view.backgroundColor = UIColor.black
-        let meNav : UINavigationController = UINavigationController(rootViewController: meVC)
+        let meNav : HGNavigationController = HGNavigationController(rootViewController: meVC)
         self.addChildViewController(meNav)
     }
     
@@ -82,7 +66,7 @@ extension HGMainController {
         // 新帖
         self.setOneTabBarContent(index : 1, title: "新帖", image: UIImage(named : "tabBar_new_icon")!, selectImage: UIImage(named : "tabBar_new_click_icon")!)
         // 发布
-        self.setOneTabBarContent(index: 2, image: UIImage(named : "tabBar_publish_icon")!, selectImage: UIImage(named : "tabBar_publish_click_icon")!)
+//        self.setOneTabBarContent(index: 2, image: UIImage(named : "tabBar_publish_icon")!, selectImage: UIImage(named : "tabBar_publish_click_icon")!)
         self.childViewControllers[2].tabBarItem.isEnabled = false
         // 关注
         self.setOneTabBarContent(index : 3, title: "关注", image: UIImage(named : "tabBar_me_icon")!, selectImage: UIImage(named : "tabBar_me_click_icon")!)
@@ -96,7 +80,20 @@ extension HGMainController {
         vc.tabBarItem.title = title
         vc.tabBarItem.image = image
         vc.tabBarItem.selectedImage = selectImage
-        self.itemArray.add(vc.tabBarItem)
+    }
+    
+    // MARK:- 自定义发布按钮
+    fileprivate func publishBtn() {
+        
+        // 创建按钮, 设置图片, 设置尺寸, 设置位置
+        let publishBtn = UIButton(type: .custom)
+        publishBtn.setImage(UIImage(named : "tabBar_publish_icon"), for: .normal)
+        publishBtn.setImage(UIImage(named : "tabBar_publish_click_icon"), for: .highlighted)
+        tabBar.addSubview(publishBtn)
+        
+        publishBtn.sizeToFit()
+        
+        publishBtn.center = CGPoint(x: kScreen_W * 0.5, y: self.tabBar.hg_height * 0.5)
         
     }
 }

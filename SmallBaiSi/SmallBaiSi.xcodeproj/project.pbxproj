@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A14A0B771E2F14B100242956 /* HGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A0B761E2F14B100242956 /* HGTabBarView.swift */; };
 		A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983291E2C7BC70027F06A /* AppDelegate.swift */; };
 		A179832F1E2C7BC70027F06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179832D1E2C7BC70027F06A /* Main.storyboard */; };
 		A17983311E2C7BC70027F06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17983301E2C7BC70027F06A /* Assets.xcassets */; };
@@ -16,10 +15,12 @@
 		A179835A1E2CFF040027F06A /* HGFollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17983591E2CFF040027F06A /* HGFollowController.swift */; };
 		A179835C1E2CFF190027F06A /* HGNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179835B1E2CFF190027F06A /* HGNewController.swift */; };
 		A179835E1E2CFF310027F06A /* HGProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179835D1E2CFF310027F06A /* HGProfileController.swift */; };
+		A1ADA6451E45ACC00077DE6D /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADA6441E45ACC00077DE6D /* UIView+Frame.swift */; };
+		A1ADA6471E45AFA50077DE6D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADA6461E45AFA50077DE6D /* Common.swift */; };
+		A1CA9C361E457DC700A1E329 /* HGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CA9C351E457DC700A1E329 /* HGNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A14A0B761E2F14B100242956 /* HGTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGTabBarView.swift; sourceTree = "<group>"; };
 		A17983261E2C7BC70027F06A /* SmallBaiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallBaiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17983291E2C7BC70027F06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A179832E1E2C7BC70027F06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		A17983591E2CFF040027F06A /* HGFollowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGFollowController.swift; sourceTree = "<group>"; };
 		A179835B1E2CFF190027F06A /* HGNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGNewController.swift; sourceTree = "<group>"; };
 		A179835D1E2CFF310027F06A /* HGProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGProfileController.swift; sourceTree = "<group>"; };
+		A1ADA6441E45ACC00077DE6D /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		A1ADA6461E45AFA50077DE6D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A1CA9C351E457DC700A1E329 /* HGNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		A17983421E2CE1AF0027F06A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A1ADA6461E45AFA50077DE6D /* Common.swift */,
+				A1ADA6441E45ACC00077DE6D /* UIView+Frame.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				A17983461E2CFC250027F06A /* HGMainController.swift */,
+				A1CA9C351E457DC700A1E329 /* HGNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,7 +177,6 @@
 		A17983451E2CFBF80027F06A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A14A0B761E2F14B100242956 /* HGTabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,13 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14A0B771E2F14B100242956 /* HGTabBarView.swift in Sources */,
 				A17983581E2CFEED0027F06A /* HGEssenceController.swift in Sources */,
 				A179835A1E2CFF040027F06A /* HGFollowController.swift in Sources */,
 				A179832A1E2C7BC70027F06A /* AppDelegate.swift in Sources */,
 				A17983471E2CFC250027F06A /* HGMainController.swift in Sources */,
+				A1ADA6471E45AFA50077DE6D /* Common.swift in Sources */,
+				A1ADA6451E45ACC00077DE6D /* UIView+Frame.swift in Sources */,
 				A179835E1E2CFF310027F06A /* HGProfileController.swift in Sources */,
 				A179835C1E2CFF190027F06A /* HGNewController.swift in Sources */,
+				A1CA9C361E457DC700A1E329 /* HGNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

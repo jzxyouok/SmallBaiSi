@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // 统一设置TabBar和NavigationBar
+        setTabBarAndNavigationBar()
+        
         // 创建窗口, 设置窗口的根控制器, 显示窗口
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let tabBarVc : HGMainController = HGMainController()
@@ -24,6 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
+    // MARK:- 统一设置TabBar和NavigationBar
+    fileprivate func setTabBarAndNavigationBar() {
+        
+        // 统一设置TabBar
+        // 其实就是设置其的富文本属性
+        let hg_tabBarItem : UITabBarItem = UITabBarItem.appearance()
+        
+        hg_tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black], for: UIControlState.selected)
+        hg_tabBarItem.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFont(ofSize: 13)], for: UIControlState.normal)
+    }
 }
 
